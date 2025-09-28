@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Libre+Baskerville&display=swap');
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0 0 0 0;
+    padding-top: 80px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.hero-section {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+.nav-container {
+    padding: 32px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: auto;
+    width: 100%;
+    max-width: 1080px;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+nav {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-variant: small-caps;
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #767676;
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #eee;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    min-width: 200px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a {
+    padding: 12px 16px;
+    display: block;
+    color: #222;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-variant: small-caps;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f9f9f9;
+    color: #767676;
+}
+
+/* Hero section */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/TCFBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 60px;
+    font-variant: small-caps;
+    color: white;
+    letter-spacing: 4.8px;
+}
+
+p {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 36px;
+    font-variant: small-caps;
+    margin: 5px 0 0 0;
+    color: white;
+}
+
+/* Content section */
+.content {
+    background-color: white;
+    padding: 40px;
+    scroll-margin-top: 80px;
+    min-height: calc(100vh - 80px);
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.two-column {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.column {
+    flex: 1;
+}
+
+.column.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.column.left h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 48px;
+    font-variant: small-caps;
+    color: #222;
+    margin: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.column.right {
+    flex: 2;
+}
+
+.column.right p {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-variant: normal;
+    color: #333;
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+}
+
+.adam-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.full-width {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-adam {
+    background-color: white;
+    padding: 40px;
+    min-height: calc(100vh - 80px);
+    max-width: 1080px;
+    margin: 0 auto;
+    scroll-margin-top: 80px;
+}
+
+.banner {
+    height: 100px;
+    overflow: hidden;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.anchor {
+    scroll-margin-top: 80px;
+}
+
+.excerpt-one, .excerpt-two {
+    background-color: white;
+    padding: 40px;
+    min-height: calc(100vh - 80px);
+    max-width: 1080px;
+    margin: 0 auto;
+    scroll-margin-top: 80px;
+}
+
+.footnote {
+    font-size: 10pt;
+    font-weight: 400;
+    font-family: 'Libre Baskerville', serif;
+}
