@@ -254,11 +254,17 @@ p {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     body {
-        padding-top: 60px; /* Reduce nav height on mobile */
+        padding-top: 120px; /* Increase for multi-line nav */
     }
 
     .nav-container {
         padding: 16px; /* Reduce nav padding */
+    }
+
+    nav ul {
+        gap: 15px; /* Reduce gap on mobile */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center;
     }
 
     nav a {
@@ -292,6 +298,7 @@ p {
 
     .content, .about-adam, .excerpt-one, .excerpt-two {
         padding: 20px; /* Reduce padding */
+        scroll-margin-top: 120px; /* Match body padding */
     }
 
     .two-column {
